@@ -1,33 +1,37 @@
+body {
+  background-color: powderblue;
+}
+
 .przyciski {
+  display: flex;
+  justify-content: center;
+}
+
+
+select, option {
+    width: 330px;
+}
+
+option {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     display: flex;
     justify-content: center;
-  }
   
-  
-  select, option {
-      width: 330px;
-  }
-  
-  option {
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      display: flex;
-      justify-content: center;
-    
-  }
-  
-  label {
-    display: flex;
-    justify-content: center
-  }
-  
-  .time {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .przycisk {
-    display: flex;
-    justify-content: center;
-  }
+}
+
+label {
+  display: flex;
+  justify-content: center
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+}
+
+.przycisk {
+  display: flex;
+  justify-content: center;
+}
