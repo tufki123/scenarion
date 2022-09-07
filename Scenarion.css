@@ -1,21 +1,33 @@
-:root {
-    --green: #38ccae;
-    --dark: #1b1b1b;
-}
-
-
-html {
-	font-size: 125%;
-	font-family: "Helvetica Neue", "HelveticaNeue", Arial, sans-serif;
-	font-weight: 300;
-	line-height: 1.6;
-}
-body { 
+.przyciski {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background: var(--green);
-    background: linear-gradient(to right top, var(--dark), var(--green));
+  }
+  
+  
+  select, option {
+      width: 330px;
+  }
+  
+  option {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      display: flex;
+      justify-content: center;
     
-    
-}
+  }
+  
+  label {
+    display: flex;
+    justify-content: center
+  }
+  
+  .time {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .przycisk {
+    display: flex;
+    justify-content: center;
+  }
