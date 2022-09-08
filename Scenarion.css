@@ -1,37 +1,83 @@
-body {
-  background-color: powderblue;
+:root {
+    --color-bg-dark: #361999;
+    --color-bg-light: #78fff1;
+    --color-bgT-dark:  #b59fff;
+    --color-bgT-light:   #c2fff9;
 }
 
-.przyciski {
-  display: flex;
-  justify-content: center;
-}
-
-
-select, option {
-    width: 330px;
-}
-
-option {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+body { 
+/*     align-items: center; */
+    background: linear-gradient(
+        to top right,
+        var(--color-bg-dark),
+        var(--color-bg-light)
+    );
+    color: #fff;
     display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    height: 100vh;
     justify-content: center;
-  
+    overflow: hidden;
+    width: 100vw;
+}
+
+.action {
+  background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.25)
+    );
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 24px;
+    outline: transparent;
+    overflow: hidden;
+    position: relative;
+    transition: background 0.3s ease-out, box-shadow 0.3s ease-out,
+        color 0.3s ease-out, outline 0.3s ease-out;
 }
 
 label {
-  display: flex;
-  justify-content: center
+  color: #fff;
+    font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.time {
-  display: flex;
-  justify-content: center;
+select {
+   border: 2px solid rgb(93, 92, 92);
+  border-radius: 4px;
+  background: linear-gradient(
+    to top right,
+    var(--color-bgT-dark),
+    var(--color-bgT-light));
+  height: 25px;
+  width: 200px;
+  border-radius: 10px;
 }
-
-.przycisk {
-  display: flex;
-  justify-content: center;
+  
+textarea {
+    border: 2px solid rgb(93, 92, 92);
+    border-radius: 10px;
+    Font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(
+        to top right,
+        var(--color-bgT-dark),
+        var(--color-bgT-light)
+    );
+  }
+    
+input {
+    border: 2px solid rgb(93, 92, 92);
+  border-radius: 4px;
+  background: linear-gradient(
+    to top right,
+    var(--color-bgT-dark),
+    var(--color-bgT-light));
+  height: 25px;
+  width: 80px;
+  border-radius: 10px;
 }
